@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive</title>
+</head>
+
+<body>
+
+    <div class="min-h-screen bg-blue-200 p-10 lg:p-20">
+
+        <!-- colors as responsive -->
+        <h2 class="text-6xl text-black
+         md:text-red-500
+         lg:text-yellow-600
+         xl:text-white">
+            Mobile First
+        </h2>
+
+        <h2 class="text-3xl lg:text-6xl
+        text-black
+        md:text-red-500
+        lg:text-yellow-600
+        xl:text-white">
+            Different Sizes Per Device
+        </h2>
+
+        <!-- stacking vs side by side -->
+        <div class="lg:flex md:space-x-8">
+            <div class="lg:w-1/2 p-10 bg-white mt-10">on mobile we stack</div>
+            <div class="lg:w-1/2 p-10 bg-white mt-10">on desktop, we are side by side</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

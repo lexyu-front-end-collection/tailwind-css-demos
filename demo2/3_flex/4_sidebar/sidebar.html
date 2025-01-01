@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sidebar</title>
+</head>
+
+<body>
+
+    <div class="bg-teal-600 h-64">
+
+        <div class="md:flex h-full border border-red-500">
+            <div id="sidebar" class="
+            hidden md:block
+            md:w-1/5 
+            bg-orange-500 p-10 items-stretch">
+                sidebar
+            </div>
+
+            <div class="w-1 bg-gray-100 cursor-col-resize" id="resizer"></div>
+
+            <div class="md:flex-grow bg-green-500 p-10 flex-grow">
+                content
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const resizer = document.getElementById('resizer');
+        const sidebar = document.getElementById('sidebar');
+
+        let isResizing = false;
+
+        resizer.addEventListener('mousedown', (event) => {
+
+            isResizing = true;
+        });
+
+        document.addEventListener('mousemove', (event) => {
+
+            if (isResizing) {
+                const newWidth = event.clientX - sidebar.getBoundingClientRect().left;
+
+                sidebar.style.width = `${newWidth}px`;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isResizing = false;
+        });
+    </script>
+</body>
+
+</html>
