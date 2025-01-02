@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Card</title>
+</head>
+
+<body>
+
+    <div class="bg-blue-100 p-20">
+        <h3 class="text-blue-400 mb-4 text-sm font-bold hover:text-blue-900">1. Card w/ no image</h3>
+
+        <div class="bg-white rounded-lg p-6 shadow-lg">
+            <h2 class="font-bold mb-2 text-2xl hover:underline text-gray-800">
+                Card with no image
+            </h2>
+            <p class="text-gray-700">This is my new card!</p>
+        </div>
+    </div>
+
+
+
+    <div class="p-20 bg-purple-100">
+        <h3 class="text-purple-400 mb-4 text-sm font-bold hover:text-purple-900">
+            2. Card w/ image
+        </h3>
+        <div class="bg-white rounded-lg shadow-lg w-4/5 md:w-1/3">
+            <img src="https://images.unsplash.com/photo-1731432245362-26f9c0f1ba2f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="sea" class="rounded-t-lg">
+            <div class="p-6">
+                <h2 class="font-bold mb-2 text-2xl hover:underline">Card with an image</h2>
+                <p class="text-purple-700">This is a little bit better of a card</p>
+                <a href="#" class="underline hover:text-purple-900 text-sm">Read More 👉</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-20 bg-orange-200">
+
+        <h3 class="text-orange-400 mb-4 text-sm font-bold hover:text-orange-900">
+            3. Horizontal &amp; Responsive Card
+        </h3>
+        <div class="bg-white rounded-lg shadow-2xl md:flex">
+            <img src="https://images.unsplash.com/photo-1730119986244-eb33b57b3950"
+             alt=""
+             class="md:w-1/3 rounded-t-lg md:rounded-t-none md:rounded-l-lg">
+
+            <div class="p-6">
+                <h2 class="font-bold mb-2 text-2xl md:text-3xl hover:underline text-orange-700">Horizontal Card</h2>
+                <p class="text-orange-600">Look at me go sideways!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
