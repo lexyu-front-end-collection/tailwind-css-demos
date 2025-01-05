@@ -45,8 +45,8 @@
     <script>
         const passwordInput = document.getElementById('password');
         const errorMessage = document.getElementById('password-error');
-    
-        passwordInput.addEventListener('input', function() {
+
+        passwordInput.addEventListener('input', function () {
             if (this.value && this.value.length < 8) {
                 errorMessage.style.display = 'block';
             } else {

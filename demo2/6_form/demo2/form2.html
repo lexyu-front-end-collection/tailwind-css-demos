@@ -9,32 +9,37 @@
 </head>
 
 <body>
-    <div>
-        <div>
-            
-            <form method="POST" action="">
 
-                <div>
-                    <label for="">
-    
+    <div class="bg-green-200 py-32 px-10 min-h-screen">
+        <div class="bg-white p-10 rounded-lg md:w-2/3 lg:w-1/2 mx-auto">
+
+            <form method="POST" action="" class="">
+
+                <div class="flex items-center mb-5">
+                    <label for="username" class="inline-block text-right w-20 mr-6
+                    text-gray-500">
+                        Username
                     </label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="username" id="username" placeholder="your username" class="border-b-2 border-gray-400 w-full flex-1 py-2
+                      placeholder-gray-300 outline-none focus:border-green-400">
                 </div>
-                <div>
-                    <label for="">
-    
+                <div class="flex items-center mb-10">
+                    <label for="password" class="inline-block text-right w-20 mr-6
+                    text-gray-500">
+                        Password
                     </label>
-                    <input type="password" name="" id="">
+                    <input type="password" name="password" id="password" placeholder="your password"
+                        class="border-b-2 border-gray-400  focus:border-green-400 w-full flex-1 py-2 placeholder-gray-300 outline-none">
                 </div>
 
-                <button type="submit"></button>
+                <div class="text-right">
+                    <button type="submit" class="py-3 px-8 bg-green-400 text-white rounded font-bold">Submit</button>
+                </div>
 
             </form>
 
         </div>
     </div>
-
-
 
 </body>
 
